@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <meta name="description" content="How to contact Maddie Norwood.">
+  <meta name="keywords" content="Maddie, Norwood, contact">
+  <meta name="author" content="Maddie Norwood">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <div class="heading headerimage">
+      <a href="index.html"><img src="mnblue.png" class="centre large" width = "150" height = "150" alt="Logo."/></a>
+    </div>
+    <nav class="nav">
+      <ul class="nav">
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="resume.html">My Resume</a></li>
+        <li><a href="personal.html">Personal</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contactme.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="contact">
+      <form action="/contact.html" method="POST">
+        <br>
+        <h1 class="automargin">Contact Me</h1>
+        <p>Enter your contact information and message below.</p>
+        <section id="contactinfo">
+          <label for="name">Name</label>
+          </br>
+          <input type="text" name="name" id="name" placeholder="John Smith" required pattern="[A-Za-z ]+">
+          </br>
+          <label for="email">Email</label>
+          </br>
+          <input type="text" name="email" id="email" minlength="5" placeholder="example@example.org" required pattern="[A-Za-z0-9.]+[A-Za-z0-9]+[@][A-Za-z]+[.][A-Za-z]+">
+          </br>
+        </section>
+        <section id="message">
+          <label for="message">Message</h3>
+          <br>
+          <textarea name="message" rows="5" cols="50" id="message" minlength="1" required placeholder="This is your message."></textarea>
+          </br>
+        </section>
+        <section id="getresponse">
+          <p>Would you like a response?</p>
+          <label for="yes">Yes</label>
+          <input type="radio" required id="yes" value="Yes" name="response">
+          <label for="no">No</label>
+          <input type="radio" id="no" required value="No" name="response">
+        </section>
+        <br>
+        <section id="submission">
+          <input type="submit" value="Submit">
+        </section>
+      </form>
+    </section>
+    <br>
+  </main>
+  <footer>
+    <ul class="footer">
+      <li><a href="https://www.linkedin.com/in/madeline-norwood/">LinkedIn</a></li>
+      <li><a href="https://github.com/maddienorwood">Github</a></li> 
+    </ul>
+  </footer>
+</body>
+</html>
