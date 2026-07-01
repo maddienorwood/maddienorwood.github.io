@@ -6,36 +6,75 @@
   <meta name="description" content="How to contact Maddie Norwood.">
   <meta name="keywords" content="Maddie, Norwood, contact">
   <meta name="author" content="Maddie Norwood">
+  <link rel="icon" href="favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header>
-    <div class="heading headerimage">
-      <a href="index.html"><img src="mnblue.png" class="centre large" width = "150" height = "150" alt="Logo."/></a>
-    </div>
-    <nav class="nav">
-      <ul class="nav">
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="resume.html">My Resume</a></li>
-        <li><a href="personal.html">Personal</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="contactme.html">Contact Me</a></li>
-      </ul>
+    <a class="headerimg" href="index.html"><h1 class = "name">Maddie Norwood</h1></a>
+    <nav>
+        <ul>
+            <li class="hover">
+              <a href="aboutme.html">About Me</a>
+            </li>
+            <li class="hover">
+              <a href="resume.html">My Resume</a>
+            </li>
+            <li class="hover">
+              <a href="personal.html">Personal</a>
+            </li>
+            <li class="hover">
+              <a href="articles.html">Articles</a>
+            </li>
+            <li class="hover">
+              <a href="contactme.html">Contact Me</a>
+            </li>
+        </ul>
     </nav>
   </header>
-  <main class="main">
-    <section id="contact">
-      <br>
-      <h2>How to Get in Touch:</h2>
-      <h3>You can contact me by <a href="MAILTO:maddie@maddienorwood.com">email</a> or via my <a href="https://www.linkedin.com/in/madeline-norwood/">LinkedIn</a>.</h2>
+  <main>
+    <section class="mobile">
+        <h1>Want to Talk?</h1>
+        <p>I'd <span>love to get in touch</span>! Fill out the form to <span>send me a message</span>, or <span>use the contact links below</span>.</p>
+
+        <form id="contactform" method="POST" action="https://api.web3forms.com/submit">
+            <div>
+                <input type="hidden" name="access_key" value="0508c4eb-ad34-44a5-8632-0298c3789258">
+            </div>
+            <div>
+                <label for="first_name">First Name</label>
+                <input type="text" minlength="1" name="first_name" id="first_name" placeholder="SpongeBob" required>
+            </div>
+            <div>
+                <label for="last_name">Last Name</label>
+                <input type="text" minlength="1" name="last_name" id="last_name" placeholder="SquarePants" required>
+            </div>
+            <div>
+                <label for="company">Company Name</label>
+                <input type="text" name="company" id="company" placeholder="Krusty Krab">
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="spongebob@krustykrab.com" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="(555) 123-4567">
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" rows="10" cols="40" placeholder="I'm ready!" required></textarea>
+            </div>
+            <div id="submit">
+                <button>Submit</button>
+            </div>
+        </form>
     </section>
     <br>
   </main>
   <footer>
-    <ul class="footer">
-      <li><a href="https://www.linkedin.com/in/madeline-norwood/">LinkedIn</a></li>
-      <li><a href="https://github.com/maddienorwood">Github</a></li> 
-    </ul>
+    <hr>
+    <strong>Contact Me:</strong>&nbsp;<a href="mailto:maddie@maddienorwood.com" class="hover">Email</a >&nbsp;<a href="https://www.linkedin.com/in/madeline-norwood/" class="hover" target="_blank">LinkedIn</a>&nbsp;<a href="https://github.com/maddienorwood" class="hover" target="_blank">GitHub</a>
   </footer>
 </body>
 </html>
